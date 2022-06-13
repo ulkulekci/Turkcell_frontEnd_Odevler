@@ -1,0 +1,13 @@
+Override: Eski hükmün üzerine yeni bir hükmün yazılması.
+
+Padding: Css için iç boşluk ayarlaması.
+
+Margin: Css için dış boşluk ayarlaması.
+
+Radius: Css'te yuvarlak kenar özelliği verir.
+
+CDN: Content delivery network.
+
+Float: Css'te bir biri ardına sıralanmış elementlere float uygulandığında elementler eğer yeterli alan varsa yan yana dizilirler.
+
+Viewport: Bir web sayfasında kullanıcının görüntüleyebildiği alandır.

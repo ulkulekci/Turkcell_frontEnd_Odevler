@@ -1,0 +1,183 @@
+Terminal komutlari
+Komutlarin basindaki $> ifadesi promttur. Farkli farkli sekillerde gorulebilir. Komutlari calistirirken bu kismi yazmayin. Ornegin $>pwd icin terminale sadece pwd yaziniz.<***> kisimlarini sizin sistemin bilgilerini vermeniz gerekir.
+ornegin cd <dizin> dedigim yerde gecmek istediginiz dizini arguman olarak vermeniz gerekmektedir, cd workspace gibi.
+
+
+$>pwd             ==> print working directory (calisma dizinini goster)
+$>whoami          ==> :) ben kimim
+$>which <komut>   ==> Write the full path of COMMAND(s) to standard output. (Komutun tam adresini gosterir)
+$>which code      diyerek vs code'un hangi dizinde bulundugunu veya nereden calistirildigi ogrenebiliriz.
+$>whatis <komut>  ==>Komut hakkinda kisa bir ozet verir. gitbash'te calismayabilir
+
+$>clear        ==> consolu silerek temizle
+$>             ==>Direkt CTRL+l tusuna basarak promptu yukari cekin (konsolu silmeden temizler)
+
+$>cd <dizin>   ==> change directory        (calisma dizinini degistirir)
+$>cd ~         ==> Kullanicinin ana dizinine gecer.
+$>cd -         ==> Bir onceki dizine gec.
+
+$>ls           ==> list                    (calisma dizinindeki dosya ve klasorleri listeler)
+$>ls -l        ==> dosya ve klasorleri alt alta listeler(satir satir)
+$>ls -a        ==> ek olarak gizli dosyalari da gosterir
+$>ls -h        ==> ciktidaki bazi kisimlari daha okunabilir bir formatta sunar
+$>ls -lah      ==> yukaridaki 3 islemi birlikte yapar.
+
+
+Ekstralar
+
+$>ls -lah komutunu calistirdiktan sonra ciktiyi inceleyiniz.
+Ciktida
+./
+../
+gozukecektir.
+./ => bu dizin anlamanina gelir
+../ => bir ust dizine gec demektir.
+
+cd ile kullanimi 
+
+$Desktop>pwd
+<Kullanici>/Desktop       ===> seklinde bir cikti verecektir.
+
+$Desktop>cd ..            ===> bir ust dizine gec
+$>pwd
+<kullanici>
+
+code ile kullanimi ise
+
+code .           ==> bu dizinde code'u ac
+
+code ./workspace/frontend      ==> workspace/frontend dizinde code'u ac
+
+code ..  bir ust dizinde code'u ac
+
+
+=====================================================================================================================
+
+
+
+CSS(Cascading Style Sheet)
+
+Syntax (soz dizimi)
+
+selector{
+property: value;
+}
+ornegin
+
+div{
+color: red;
+}
+
+HTML'e CSS dahil etme yontemleri
+
+1)Inline CSS (Satirda css)
+2)Internal CSS (Dosyaya dahili css)
+3)External CSS (Farkli bir dosyadaki css)
+
+
+
+HTML attribute'larina css uzerinden erisim.
+
+1) id uzerinden (Benzersiz olmalidir)
+------------html-----------------------
+<div id="div_id"> Lorem ipsum... </div>
+
+------------css-------------------------
+#div_id{
+color:blue;
+}
+
+
+2)class uzerinden erisim (Gruplanmis objelerde kullanilabilir ornegin paragraflar)
+-------------------html-----------------
+<p class="p_class"> lorem ipsum dolar sit amet. </p>
+<p class="p_class"> lorem ipsum dolor </p>
+
+-------------------css ----------------
+.p_class{
+color:green;
+}
+
+3)html tagleri uzerinden erisim
+---------------------html-------------------
+<div>
+Lorem ipsum <strong> dolor </strong> sit amet proxy min de <strong> values </strong> yuiine.
+</div>
+
+---------------------css ------------------
+
+strong{
+color :yellow;
+}
+
+
+Stillendirmeler ve aciklamalari
+
+color 		=> yazi rengini degistir.
+font-size       => yazi boyutunu ayarlamak.
+font-familly    => font tipini degistirir.
+font-weight     => font kalinligini degistirir. ornegin bold
+font-style      => font stilini degistirir ornegin italic
+background 	=> arkaplan rengini degistir.
+margin 		=> dis bosluk.
+padding 	=> ic bosluk.
+border          => cerceve veya sinir
+border-radius   => cercevenin koselerini stillendirmek icin kullanilir.
+text-indent     => paragraflara girinti vermek
+text-decoration => underline, linethrough, none gibi.
+text-transform  => Lowercase(tamami kucuk harf), Uppercase(tamami buyuk harf) ve Capitialize(bas harfler buyuk) etkisi vermek icin kullanilir.
+
+word-spacing  	=> kelimeler arasindaki bosluklari ayarlar
+letter-spacing  => harfler arasindaki bosluklari ayarlar
+line-height     => satir yuksekligini ayarlar
+
+list-style-type => Listlelerin stilini etkiler ornegin noktalari kaldirmak veya kare kullanmak.
+
+box-shadow     => golgelendirme yapmak icin kullanilir.
+transition     => gecis efektlerini uygulamak.
+
+column-count    => Yazilari belirtilen kolan sayisina gore hizalar
+column-rule     => Belirtilen kolonlara kural olusturmak, ornegin 10px solid red;
+display         => Goruntuleme modu, inline, inline-block, block ve none
+
+
+
+margin, padding ve border benzeri yapilar kullanirken
+
+margin-top     -> ustten dis bosluk
+margin-right   -> sagdan dis bosluk
+margin-left    -> soldan dis bosluk
+margin-bottom  -> alttan dis bosluk
+
+seklinde istedigimiz kisimlari duzenleyebiliriz.
+
+CSS Odevleri
+
+1) Kutunun koselerini 2 4 6 8 (saat yonunde olacak sekilde ayarlayiniz).
+
+top-left    => 2 olmali
+top-right   => 4 olmali
+bottom-right=> 6 olmali
+bottom-left => 8 olmali
+
+Not: Yaptiginiz degisiklikleri net olarak gormek icin border kalinligini ve rengini istediginiz sekilde degistirebilirsiniz. Ornegin border kalinligi 3px rengi ise mavi gibi olabilir.
+
+2) display:none ve visibility:none arasindaki fark nedir?
+3) float kullanarak uygulama yapiniz (tur2.png de belirtildigi gibi).
+3) pseudo class ve pseudo element nedir arastiriniz. 
+4) css selectors nedir? Grup selectorler nelerdir? 
+5) box-sizing nedir? border-box ve content-box ile kullanimlarina bakiniz?
+
+
+
+
+
+
+
+
+
+
+
+
+
+

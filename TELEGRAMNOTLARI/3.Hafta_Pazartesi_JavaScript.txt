@@ -1,0 +1,111 @@
+-->String, concat()==> concat sadece kelimenin en sonuna veri ekler.
+###########
+--> Diziyi String'e çevirme
+var dizi = ["java", "spring", "hibernate", "html"];
+dizi.toString(); //1. yöntem
+
+dizi.join(); //2. yöntem
+dizi.join(" "); //dizi elemanlarını virgül yerine boşluk ile ayırır.
+dizi.join("-"); //dizi elemanlarını - ile ayırır.
+
+###########
+
+-->split: bir string verisindeki bütün elemanları bir diziye atar.
+var text = "java spring hibernate MVC Data";
+var dizi = text.split(" "); //text değişkenindeki boşluklara göre
+			    //ayırarak diziye atar.
+
+###########
+
+-->slice() ==> dizi clone
+var dizi = [1,2,3,4,5];
+dizi.slice(3); //3. indisten itibaren diziyi kopyalar.
+dizi.slice(0, 2); // 0<=X<=(2-1)
+
+-->splice() ==> diziye veri ekleme silmek
+var dizi=[1,2,3,4,5,6,7,8,9];
+dizi.splice(3); //verilen indisten .tibaren kopyalar.
+dizi.splice(0,2); //0<=X<=(2-1) indis aralığını kopyalar.
+dizi.splice(2,0, "20", "30"); //2. elemandan sonra 0 eleman sil ve araya 20 ile 30 ekle
+dizi.splice(2,1, "20", "30"); //2. elemandan sonra 1 eleman sil ve araya 20 ile 30 ekle
+
+###########
+
+-->Hoisting
+deneme = 44;
+var deneme;
+console.log(deneme);
+
+###########
+
+-->Object: özellikleri
+//this: unutma
+//anonymous function
+
+var person={
+  "adı":"Hamit",
+  "soyadı":"Mızrak",
+  "deneyim":9,
+  "isLogin":true,
+  "teknolojiler":["html5","css3","js","bootstrap"],
+  "adiSoyadi":function(){
+    return this.adı.toUpperCase()
+  },
+
+  "java":{
+    "adı":"JavaSE",
+    "db":"H2DB"
+  }
+};
+
+
+//objeye sonradan veri eklemek için kullanıyoruz
+ person.eklenen="Eklenen veri";
+
+
+###########
+-->Literal Template
+//alt satıra geçmek için html elenti kullanıldı.
+var valueTem1="Merhabalar <br> nasılsınız <br> yeni teknolojiler öğreniyorum";
+
+-->1-) Multiline
+//backtick ile alt satıra geçme
+
+var valueTem2=`Merhabalar
+nasılsınız`;
+
+-->2-) Interpolation `${}`
+//değişkenlerimizi ${} içinde yazarak çağırma.
+var adi44="Hamit";
+var soyadi44="Mızrak";
+var valueInter2=`adım:${adi44} soyadım:${soyadi44}`;
+
+-->3-) Html Template
+var country="Turkey";
+  var html=
+  "<ul>"+
+      "<li>"+
+          country+
+      "</li>"+
+      "<li>"+
+          country.toUpperCase()+
+      "</li>"+
+  "</ul>";
+
+//backtick sayesinde html elementlerini daha kolay yazmamızı sağlar.
+var country="Turkey";
+var html=
+`
+<ul>
+    <li>${country}</li>
+    <li>${country}</li>
+</ul>
+`;
+
+
+
+
+
+
+
+

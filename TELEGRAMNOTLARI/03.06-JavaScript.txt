@@ -1,0 +1,106 @@
+-----Date----
+
+//Date get()
+var tarih=new Date();
+document.write('<br>'  +"Gün: "+ tarih.getDate());
+document.write('<br>'  +"Yıl: "+ tarih.getFullYear());
+document.write('<br>'  +"Dakika: "+ tarih.getMinutes());
+document.write('<br>'  +"AY (0): "+ tarih.getMonth());
+document.write('<br>'  +"<br>");
+
+//Date set()
+var tarih2=new Date("2015-1-1");
+document.write('<br>'  +"Gün: "+ tarih2.getDate());
+document.write('<br>'  +"Yıl: "+ tarih2.getFullYear());
+document.write('<br>'  +"Dakika: "+ tarih2.getMinutes());
+document.write('<br>'  +"AY (0): "+ tarih2.getMonth());
+
+----------------
+
+function bodyFunction(){
+  document.write('<br>'  +" 3 saniye sonra geldi ");
+}
+setTimeout(bodyFunction,3000); //belirlenen zamana göre fonksiyon çalıştırma
+
+----------------
+//1-) callback function 
+function ikinci(value){
+  document.write('<br>'  +" ikinci fonkisyon çalıştı "+value);
+}
+
+//2-) ana function
+function birinci(number1,number2,callback){
+var result=number1*number2;
+callback(result)
+}
+
+birinci(4,6,ikinci)
+
+---------------
+//2-) Immedia function : fonksiyonu çağırmadan gelsin
+//Öncesinde başka bir fonksiyon olmasın
+//immediate: dogrudan, dolaysiz, derhal
+//()()
+(function deneme44 (){
+  document.write('<br>'  +" deneme");
+})();
+
+----------------
+//Dizi
+//var dizi=[] ile var dizi2=new Array();
+//diziler sıfırdan(0) başlar
+var array=[1,5,true,"merhabalar",55]; 
+
+//iterative for
+var array=[1,5,true,"merhabalar",55];
+for (let i = 0; i < array.length;  i++) {
+ document.write('<br>'  + array[i])
+}
+
+//for-in (for over index)
+var array=[1,5,true,"merhabalar",55];
+for (temp in array){
+  document.write('<br>'  + temp+" ==> "+array[temp])
+}
+
+//for-of(for over members)
+//Direk ekranda göstermek
+var array=[1,5,true,"merhabalar",55];
+for (temp of array){
+  document.write('<br>'  + temp)
+}
+
+
+// Dizi fonksiyonlarına
+
+//EKLEME
+//push(): var olan dizimizin son elemanına veri eklemek
+var array=[1,5,true,"merhabalar",55];
+array.push(" son");
+
+//unshift(): var olan dizimizin en başa veri eklemek
+array.unshift("önce");
+
+//ÇIKARMA
+//pop: sondan bir eleman çıkarmak
+var dizi=[1,5,true,"merhabalar",55];
+dizi.pop()
+
+//shift: başlangıçtan bir eleman çıkarmak
+var dizi=[1,5,true,"merhabalar",55]; 
+dizi.shift();
+
+//sort(): sıralama yapar 
+var dizi=["malatya","istanbul","ankara","izmir","muş","bitlis","sivas"];  
+dizi.sort();
+
+//reverse(): dizi içeriğinin sırasını terse çevirir.
+var dizi=["malatya","istanbul","ankara","izmir","muş","bitlis","sivas"];  
+dizi.reverse();
+
+//sort().reverse(): sıralanmış diziyi terse çevirir.
+var dizi=["malatya","istanbul","ankara","izmir","muş","bitlis","sivas"];  
+dizi.sort().reverse();
+
+
+

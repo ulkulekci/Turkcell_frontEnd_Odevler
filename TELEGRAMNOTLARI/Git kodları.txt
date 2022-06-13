@@ -1,0 +1,29 @@
+$git --global
+$git -l
+$git core.editor
+$git user
+$git config
+$git pwd
+$git ls
+$git init
+$git status
+$git add.
+$git log
+$git commit -m
+$git remote add origin
+$git push -u origin master
+$git pull
+code .
+cat >> deneme.txt
+node -v
+npm -v
+$git -v
+$git --version
+$git clone
+$git stash
+$git stash list
+$git stash pop
+$git stash apply
+$git stash drop
+$git stash save
+$git checkout 

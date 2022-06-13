@@ -1,0 +1,269 @@
+
+HTML
+#####Araştırma Ödevleri########################################################################################
+xhtml ile Html5 arasındaki farklar
+semantin non-semanatic
+table colspan rowspan nedir örneği
+
+#####JS#####################################################################################################
+callbackfunction (Mehmet)
+
+
+
+
+#####JS new array #############################################################
+//Alttaki gibi dizi tanımlaması yapılır ise dizinin ilk elemanı verilmiş olur.
+var dizi2 = [2];
+dizi2.push(3);
+for (var d2 of dizi2) {
+    document.write(d2 + "<br/>");
+}
+document.write("Dizi2 boyutu: " + dizi2.length);
+
+document.write("<br/><br/>***********************<br/><br/>");
+//muCars1 ve myCars2 dizileri aynıdır.
+var myCars1 = new Array(2,"Volvo","BMW");
+var myCars2 = [2,"Volvo","BMW"];
+
+for (var m1 of myCars1) {
+    document.write(m1 + "<br/>");
+}
+document.write("myCars1 boyutu: " + myCars1.length + "<br/>");
+document.write("<br/><br/>***********************<br/><br/>");
+for (var m2 of myCars2) {
+    document.write(m2 + "<br/>");
+}
+document.write("myCars2 boyutu: " + myCars2.length + "<br/>");
+
+
+
+#####JS  toString() ile join()  nelerdir ?#############################################################
+Burakcan ==>
+
+
+#####JS  apply call bind #############################################################
+BARIŞ ==> 
+
+#####JS  LIFO FIFO #############################################################
+MUSTAFA ==> 
+stack(yığın)'da: LIFO(Last in First out) (En son giren en önce çıkar) mantığına dayanan, 
+elemanlar topluluğundan oluşan bir yapıdır. örnek olarak Taşınırken topladığımız koli kutusu düşünelim. 
+İçerisinde kitaplar var, Mantıken kolinin altı kapalı ve üst üste koymamız gerekiyor. Koliyi tekrar açtığımızda
+kitapları çıkartırken en üstteki kitaptan çıkarmaya başlıyoruz. 
+Yığın da aynı mantıkta çalışıyor.
+Yığınlara eleman eklerken veya çıkartırken bazı methodlar uygulanıyor. 
+
+###############################################################################################################
+Stack Memory - Heap Memory nedir? aralarındaki Fark  (Furkan)
+Stack = Primitive (int)     , Hafıza uzayı belli
+Heap  = Wrapper   (Integer) , Hafıza uzayı belli değilse (collection)
+
+Stack ve Heap bellekte (RAM’de) bulunan mantıksal yapılardır . Değer tip (value type) dediğimiz int, short, byte, long, decimal, double, float gibi tipler stackte tutulur. Stackte veriler üst üste (LIFO– Last in First out) mantığında dizilir ve sırası gelmeden aradaki bir değer ile işlem yapılamaz. Class type (Sınıf tipi) değişkenler referans tiplerdir referans ettikleri model (referans) stackte değerleri ise heapde saklanır.
+int a=5
+int b=a
+// a ve b 5'e esit
+int a=2
+// a=2 b=5
+
+
+###############################################################################################################
+Git CVCS - DVCS nedir aralarındaki farklar nelerdir ?  (Mustafa)
+Versiyon Kontrol Sistemi (VCS): revizyon kontrol veya kaynak kontrol
+diye de geçip, değişiklik yönetim sistemi anlamına gelmektedir.  
+Bir ya da daha fazla dosya üzerinde yapılan değişiklikleri
+kaydeden ve daha sonra belirli bir sürüme geri dönebilmenizi sağlayan bir sistemdir.
+versiyon kontrol sistemi, dosyaların ya da bütün projenin geçmişteki belirli bir sürümüne erişmenizi, 
+zaman içinde yapılan değişiklikleri karşılaştırmanızı, soruna neden olan şeyde en son kimin değişiklik yaptığını, 
+belirli bir hatayı kimin, ne zaman sisteme dahil ettiğini ve
+başka pek çok şeyi görebilmenizi sağlar. Öte yandan, bir hata yaptığınızda ya da bazı dosyaları yanlışlıkla
+sildiğinizde durumu kolayca telâfi etmenize yardımcı olur. 
+
+AMAÇLARINI SÖYLEYİM:
+1)Geliştiricilerin, kod değişikliklerini takip etmelerini sağlar.
+2)Geliştiricilerin, kod değişiklik geçmişini görmelerini sağlar.
+3)Geliştiricilerin, aynı kod dosyalarında aynı anda çalışmasına izin verir.
+4)Geliştiricilerin, kodlarını dallanma yoluyla ayırmalarına izin verir.
+5)Farklı dallardan yani branch'lerden kodları birleştirir.
+6)Geliştiricilerin, çakışmalarını gösterir ve bunları çözmelerine izin verir.
+7)Geliştiricilerin, değişikliklerini önceki bir duruma döndürmelerine izin verir.
+Dağıtık Sürüm Kontrol Sistemleri:kullanıcılar dosyaların yalnızca en son bellek kopyalarını almakla kalmaz, 
+yazılım havuzunu (repository) bütünüyle kopyalarlar. Git, Mercurial, Bazaar ve Darcs gibi örnekleri dağıtık sistemlere örnektir.
+Dağıtık sistemlerde üzerinde ortak çalışma yütürülen sunuculardan biri çökerse istemcilerden birinin yazılım havuzu 
+sunucuya geri yüklenerek sistem kurtarılabilmektedir. Her seçip alma (check out) işlemi esasında bütün verinin yedeklenmesiyle sonuçlanır.
+Dağıtık sistemlerin (DVCS) merkezi sistemlere (CVCS) kıyasla sundukları avantajları ve dezavantajları şu şekilde listeleyebiliriz11.
+
+Network bağlantısı olmasada kullanıcılar ilgili repo üzerinde çalışabilirler,
+dağıtık sistemler ortak işlemleri daha hızlı işler, çünkü merkezi bir sunucuyla iletişim kurmaya gerek yoktur. 
+ dağıtık sistemler bu iletişime değişikliklerin diğer ortaklarla paylaşılacağı zaman ihtiyaç duyar.
+Özel çalışma alanları oluşturmak mümkündür.
+mustafa çelik09:15
+ Böylece, kullanıcılar paylaşmak istemedikleri taslaklardaki değişiklikleri de kullanabilirler.
+Üzerinde çalışılan kopyalar aynı zamanda uzak yedek (remote backup) görevi görürler. 
+Bu sayede herhangi bir donanım hatasından (kırılma noktası gibi) etkilenmezler.
+Farklı geliştirme modelleri (development branches, commander/kieutenant model gibi) kullanılanibilir.
+Projenin release version’unun kontrolü merkezi olarak gerçekleştirilebilir.
+FOSS (Free and Open-source Software / Özgür ve Açık Kaynaklı Yazılım) yazılım projelerinde, 
+liderlik çatışmaları veya tasarımdaki anlaşmazlıklar nedeniyle durdurulmuş bir proje kolaylıkla çatallanarak (fork) sürdürülebilir.
+
+
+###############################################################################################################
+ Senkron nedir ? Asenkron nedir ? aralarındaki fark ? JavaScript senkron mu ? asenkron ?   (Barış)
+
+Java       ==> MultiThread 
+C#         ==> MultiThread 
+JavaScript ==> SingleThread (setTimeout(), callBack,promise,Asgnawait)
+
+Senkronun kelime anlamı eş zamanlı olmasına rağmen programlama dilinde her bir işin sıra ile yapılmasına denir. Yani bir process bitmeden diğerine geçilmemesi. Programlama dillerinin genelinde yazdığımız kodlar yukarıdan aşağıya okunarak çalıştırılır. Yani senkron olarak çalışır.
+Asenkron Programla: Kelime anlamı başlama ve bitiş zamanları ayrı olan, aynı zamanda olmayan demek olan kelimedir. Diğer adı da eşzamanızdır. 
+Senkron programlama ise programın senkron bir şekilde değil de öncelik verdiğimiz işlemlerin daha önce yapılmasını sağlayan ya da sağladığımız programlamadır. 
+Senkron programlamada kodların yukarıdan aşağıya çalışmasını her zaman istemeyebiliriz. Mesela bir fonksiyonu son sırada yazarız ama ilk olarak o fonksiyonun çalışmasını isteyebiliriz. Burada Asenkron programlama devreye giriyor.
+Javascript single-thread çalıştırma yaptığı için çalıştırdığı eventleri ve callback leri sıraya sokarak hepsini tek bir thread ile işler. Bahsedilen Event’lerin ve Callback’lerin sırada tutulduğu yapı, basit bir kuyruk (Queue) mekanizmasıdır. Thread’in her defasında kuyruktaki ilk Event’i işleyip yeni bir Event alması da Event Loop olarak adlandırılır. Javascript Run-to-Completion adı verilen, elindeki işi tamamlamadan başka bir işe geçmeyen bir mekanizmaya sahiptir.
+
+
+ ###############################################################################################################
+ Compiler- interpreter ?
+ JavaScript Compiler mi ? interpreter mi ? (Burakcan)
+
+ •	Compiler(Derleyici): Geliştiricilerin herhangi bir programlama dilini kullanarak yazdığı kaynak kodu bilgisayarın anlayabileceği makine diline yani 0 ve 1’lere çeviren aracı yazılımdır.
+•	 Derleyici sayesinde geliştiriciler farklı programlama dillerini kullanarak aynı işlevi yerine getiren yazılımlar üretebilirler. Üstelik Compiler’ların varlığı, çok fazla programlama dilinin olmasına ve geliştiricilerin alternatif dillerle çalışmasına yardımcı olmaktadır.
+•	Interpreter(Yorumlayıcı): Yüksek se
+•	Interpreter(Yorumlayıcı): Yüksek seviyeli programlama dili ile yazılmış bir progamı adım adım makine diline çeviren ve makine dilindeki talimatları çalıştıran programdır.
+•	Interpreter bütün programın çalıştırılabilir bir kodunu üretmek yerine, programın adımlarını tek tek makine diline çevirir ve hemen çalıştırır. Program tekrar çalıştırılmak istenirse interpreter kaynak kod üzerinde yine aynı yolu izler.
+•	JavaScript Interpreter(Yorumlayıcı) bir dildir.  JavaScript’in compiler adımı yoktur. Bunun yerine, tarayıcıdaki bir interpreter(yorumlayıcı) JavaScript kodunu okur, her satırı yorumlar ve çalıştırır. Daha modern tarayıcılar, JavaScript’i tam çalışmak üzereyken yürütülebilir bayt koduna derleyen Just-In-Time(JIT) derlemesi olarak bilinen teknoloji kullanır.
+•	Just-In-time(JIT):Just-In-Time veya JIT, derleme, JavaScript, C# ve Java gibi diller için çalışma zamanı yorumlayıcıları tarafından, C++
+gibi önceden derlenmiş ikili diller tarafından sunulan yerel performansa yaklaşık yürütme hızları sağlamak için kullanılan bir tekniktir.
+
+ ###############################################################################################################
+ for ile while arasındaki fark  ? (Tuğba)
+
+For: Önceden ayarlanmış sayıda yinelenir.
+Yalnızca yineleme sayısı bilindiğinde sonucu elde etmek için kullanılır.
+Koşul 'for' döngüsüne yerleştirilmezse, döngü sonsuz kez yinelenir.
+While: Bir koşul sağlanana kadar yinelenir.
+Yineleme sayısı bilinmediğinde koşulu sağlamak için kullanılır. Koşulu True veya False değerine göre değerlendirmek için ifade belirtilir. 
+Koşul 'while' döngüsüne yerleştirilmezse derleme hatası verir.
+
+###############################################################################################################
+Compiler - Syntax - Runtime Error  (Doğuş)
+Runtime error : Çalışma zamanı hatası, bir programın düzgün çalışmasını engelleyen bir yazılım veya donanım sorunudur. Çalışma zamanı hataları, çalışmakta olduğunuz dosyadaki bilgileri kaybetmenize, dosyayla çalışmanızı engelleyen hataların oluşmasına (dosyanın bozulmasına) veya bir özelliği kullanmanızın engellenmesine yol açabilir. Çalışma zamanı hataları, uyumlu olmayan iki yazılım programı çalıştırıyorsanız, bilgisayarınızda bellek sorunları varsa veya bilgisayarınıza kötü amaçlı yazılımlar 
+
+Syntax error : Syntax hatası, bizim kod yazarken uymamız gereken kurallara uymadığımız zaman karşımıza çıkar. Buna örnek vermek gerekirse, string veri tiplerinin tırnak içinde yazılması gerekir. İşte bu noktada eğer, biz bu tırnaklardan birini koymayı unutursak burada bir yazım hatası yani syntax hatası yapmış oluruz.  Syntax hatasında Editor, biz hatalı kod satırından çıkar çıkmaz, kodu çalıştırmadan bir hata penceresi açar ve bize hatalı olduğumuzu gösterir.
+
+Compile error : Compile hatası, syntax hatasından farklı olarak, kodu çalıştırdıktan sonra farkına varabileceğiniz bir hatadır. Genellikle yanlış veya eksik yazılmış bir kelime sebep verir. Range yerine Rang gibi yada farklı harfe basma gibi küçük yanlışlıklar bu hatayı tetikler. 
+
+
+
+
+CSS 
+ ###############################################################################################################
+ ###############################################################################################################
+ASCII UNICODE  (Ali Furkan)
+ASCII Kodu Nedir?
+ASCII (American Standard Code for Information Interchange), bizim bilgisayarda görsel olarak girdiğimiz karakter,harf ve rakamların bilgisayar dilindeki temsil edilme şeklidir diyebiliriz.Yani bilgisayarımızın o karakteri,harfi veya rakamı belleğinde saklama biçimidir.
+Ascii İngilizce’de kullanılan Latin alfabesi üzerine ANSI tarafından 1963 yılında kurulmuş bir karakter kodlamasıdır
+Unicode Nedir?
+ASCII karakterler sadece İngilizce üzerinde etkili olurken, Unicode tamamen evrenseldir. Adı “Universal” ve “Code” kelimelerinin bir araya getirilmesiyle oluşan Unicode’un farklı sürümleri sayesinde İbranice, Çince ve Arapça gibi kompleks diller kolayca dijital ortamlara aktarılabilmektedir. Yalnızca diller değil, Unicode kodlaması sayesinde karmaşık semboller ve karakterler kolayca meydana getirilebilirler.
+Her karakter için benzersiz bir numara kullanılarak platformlar arası karmaşalara çözüm getirildi. Unicode kullanıldığı sürece hangi platformu kullandığınızı hangi cihaz, yazılım veya dili kullandığınız fark etmiyor.
+ Bugün Unicode kodlaması artık her yerde kullanılıyor. Tüm işletim sistemleri, arama motorları, internet tarayıcıları, bilgisayarlar ve hatta akıllı telefonlar bile Unicode karakter kodlaması üzerinden çalışıyor
+UTF, Unicode Dönüşüm Birimi anlamına gelir.
+•	UTF-8: İngilizce karakterleri kodlamak için (8bit)
+•	UTF-16: En çok kullanılan karakterleri kodlamak için iki bayt (16 bit) kullanır
+•	UTF-32: 16 bitlik bir sayının tüm karakterleri temsil etmek için yetmediği karakterleri kodlamak için dört bayt (32 bit) kullanır.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Libraries - Framework (Tuğba)
+Library: Geliştiriciler tarafından yazılan ve herhangi bir yerde yeniden kullanılabilen bir kod parçasıdır. Bir kütüphaneden bir sınıfı ya da bir işlevi istediğimiz zaman nerede kullanacağımıza biz karar veririz. Uygulama akışından siz sorumlusunuz.
+Örneğin: Bir JS kütüphanesi olan JQuery
+
+
+Framework: Bir programlama dilini base alarak geliştirilen, belirli platformlar için uygulamalar oluşturan yazılım. Frameworklerde bir yazılım mimarisi bulunmaktadır ve içerisinden bir fonksiyonu ya da bir 
+Framework: Bir programlama dilini base alarak geliştirilen, belirli platformlar için uygulamalar oluşturan yazılım. Frameworklerde bir yazılım mimarisi bulunmaktadır ve içerisinden bir fonksiyonu ya da bir metodu kullanırken uymanız gereken standartlar vardır. Framework akıştan sorumludur. 
+Örneğin: Spring Framework Java için geliştirilmiş, açık kaynak olan bir uygulama geliştirme framework'üdür.
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+SDK-JDK arasındaki fark (Kubilay)
+SDK Nedir?
+SDK (Software Development Kit), yazılım geliştirme kiti anlamına gelir ve bir uygulama veya program oluşturmak için dünya çapında kullanılan bir dizi yazılım aracı olarak tanımlanır. Bir uygulama geliştirmek için çeşitli platformlar vardır ve her forumun kendi SDK'sı vardır. 
+Örneğin, Java platformunda bir uygulamasının geliştirilmesi, bir Java Geliştirme Kiti (JDK) gerektirir. iOS uygulamaları için iOS SDK'sı gereklidir. Evrensel Windows Platformu için .NET Framework SDK kullanılabililir.
+JDK Nedir?
+JDK (Java Development Kit): Java geliştirme kiti anlamına gelir. JDK, Java'da bir program yazmak için bir yazılım geliştirme kiti olarak tanımlanabilir. Java tarafından kullanılan 3 temel teknoloji paketinden biridir JDK. Bunlar; JVM(Java Virtual Machine), JRE (Java Runtime Environment) ve JDK. JDK, Java tabanlı yazılım geliştirmeye yardımcı olan bir dizi geliştirme aracından oluşur. Çeşitli sürümleri vardır, ancak en yaygın kullanılan sürüm Java 8'dir.
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Fast Forward - nofastforward (Kadir)
+Fast Forward:  
+Default olarak merge işlemi fast forward olarak çalışır. Main branch'inde herhangi bir değişiklik 
+olmadıysa merge edilecek branch fast forward olarak merge edilir. Main hattının son commit hash'i olarak, 
+merge edilen branch'in hash'ini alır. Eğer main branch'inde bir değişiklik var ise merge işlemi fast forward
+olmaz ve bizden hangi değişikleri kaydedeceğimize dair taahhüt bekler.
+
+Fast Forward sonrasında değişiklikler sanki master branch'inde yapılmış gibi bir history oluşur.
+Bu history'i daha anlaşılır tutmak için merge işlemi sırasında git'e "--no-ff" opsiyonu ile gidilir.
+Bu git'in fast-forward yapmamasını ve yeni bir merge commit ile ilerlemesini sağlar.
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Merge- Rebase (Şeyda)
+Fast-forward vs Rebase 
+Benzer işlevleri yerine getirmek için kullanılır. Her iki komut da bir daldaki değişiklikleri başka bir dala birleştirmek için kullanılır. Ancak bu iki komut arasında proje tarihçesinin oluşturulması ile ilgili ciddi bir farklılık vardır.
+Bazı durumlarda branch'lerden bir tanesinde herhangi bir değişiklik yapılmamış ve bu branch'in ortak commit'i ve son commit'i aynı ise bu durumda merge işlemi çok basitleşir ve git diğer branch'in tüm commit'lerini ortak commit'in 
+üzerine ekleyerek merge işlemini yapar. Bu özel duruma Git terminolojisinde "Fast-Forward Merge" denir ve her iki branch'in tarihçesi de ortak oluyor.
+Normalde merge komutu ile A dalındaki değişiklikler B dalı ile birleştirildiğinde B dalının commit tarihçesinde merge işleminden kaynaklanan ve merge commit adı verilen otomatik oluşturulmuş bir commit yer alır. Bu commit A ve B dallarının tarihçelerini birbiri ile ilişkilendirir.
+Rebase komutu kullandığımızda ise ile A dalındaki her bir commit B 
+dalına sanki commit işlemi B dalında yapılmış gibi yeniden yazılır. Bu sayede B dalının commit tarihçesi sanki tüm değişiklikler bu dalda olmuş gibi düz ve kesintisiz görünür.
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+html - xhtml (Mehmet)
+HTML, tabletler ve telefonlar gibi mobil cihazlar için daha uygunken,
+XHTML bilgisayar ekranları için  uygundur.
+HTML, SGML'nin bir uygulaması.
+XHTML XML uygulaması.
+HTML, Boş / açık etiketlere sahip olabilir.
+XHTML Kapatılmamış tüm etiketler kapatılmalıdır
+HTML, Elemanın yapıları üzerinde katı bir kural yoktur.
+XHTML Elemanların yapısı takip edilmelidir 
+HTML, Büyük / küçük harfe duyarsız: Etiketler ve nitelikler tercihe göre büyük veya küçük harf olabilir.
+XHTML Büyük / küçük harfe duyarlı: Etiketler ve öznitelikler küçük harf olmalıdır.
+HTML, Tüm içerik body elementinin altına yerleştirilebilir.
+XHTML Tüm içerik bloklar halinde yerleştirilmelidir, (p) gövde elemanının altındadır.
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+display:none;
+visibility:none arasındaki fark nedir ?
+
+
+pseudo class ile pseudo element nedir?
+
+group selectors : aşağıdaki kodlar ne yapıyor
+*
+div,p{} ==> 
+div p{} ==> 
+div>p{} ==> 
+div+p{} ==> 
+div~p{} ==> 
+
+Aşağıdaki kodları araştıralım
+box-sizing: content-box; (defaulta)
+box-sizing: border-box;
+
+##############################################################
+
+GİT
+libraries ile framework arasındaki fark  : Tuğba 
+JDK - SDK arasındaki fark :Kubilay 
+fast forward-rebase: Şeyda
+fast-forward- no-fast-forward: Kadir
+
+
+

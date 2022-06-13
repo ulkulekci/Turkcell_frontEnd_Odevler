@@ -1,0 +1,4 @@
+Derste Anlatılan Yeni Git Komutları
+
+git commit -a -m "add yapmadan göndermek"
+git commit --amend -m "commit mesajını değiştir"
