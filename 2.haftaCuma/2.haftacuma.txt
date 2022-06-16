@@ -1,8 +1,13 @@
 
     ARASTİRMA ODEVLERİ
- 1)callbackfunction
- 2)new array
+ 1) callbackfunction //Mehmet Hakan
+ 2) var dizi=[] ile var dizi2=new Array(); arasındaki fark //Kadir İrbik
 
 ****************************
    PROJE ODEVLERİ  
- Kullanıcı tarafından girilen şifre ve şifre doğrulama
+ Kullanıcı tarafından girilen şifre ve şifre doğrulama.
+*kullaniciden sifre girmesi istenecek.
+*Tekrar girmesini isteyecek 1. sifre ve 2. sifreyi karsilastiracak
+*Sifre farkli ise yanlis girdiniz tekrar giriniz 
+*Ayni ise sifre dogru girdiniz diyecek.
+//validation password -repassword
